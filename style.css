@@ -7,6 +7,7 @@
 
 html {
     font-size: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 li,
@@ -23,6 +24,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 400;
 }
 
 h4,
@@ -48,11 +50,14 @@ nav {
     margin: auto;
     align-items: center;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 #logo {
-    flex: 1 1 40rem;
+    flex: 2 1 40rem;
     font-size: 2rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
 }
 
 nav ul {
@@ -60,4 +65,47 @@ nav ul {
     flex: 1 1 40rem;
     justify-content: space-around;
     list-style: none;
+}
+
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url('./img/landing-page.jpg');
+    min-height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3 {
+    margin: 1.25rem;
+}
+
+.hero button {
+    padding: 1.25rem 4rem;
+    background-color: #4c6e97;
+    border: none;
+    color: #fff;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 932px) {
+    html {
+        font-size: 50%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem;
+    }
 }

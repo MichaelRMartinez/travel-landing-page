@@ -105,12 +105,13 @@ nav ul {
 /* LOCATIONS SECTION */
 #locations {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), transparent), url('./img/new-york-page.png');
+    background: linear-gradient(rgba(0,0,0,0.6), transparent), url('./img/new-york-page.png');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .locations-head {
@@ -126,6 +127,30 @@ nav ul {
     position: absolute;
     top: 0%;
     right: 0%;
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+    height: 50rem;
+    pointer-events: none;
+}
+
+.moving-cloud-1 {
+
+}
+
+.moving-cloud-2 {
+    top: 20%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+@keyframes cloudAnimation {
+    from {
+        transform: translate(5%, -10%);
+    }
+
+    to {
+        transform: translate(0%, 0%);
+    }
 }
 
 
@@ -134,10 +159,16 @@ nav ul {
     html {
         font-size: 50%;
     }
+    
     nav {
         text-align: center;
     }
+    
     #logo {
         padding: 2rem;
+    }
+
+    .cloud {
+        height: 40rem;
     }
 }

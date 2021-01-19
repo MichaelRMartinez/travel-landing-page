@@ -97,6 +97,33 @@ nav ul {
 }
 
 
+/* LOCATIONS SECTION */
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url('./img/new-york-page.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.locations-head {
+    width: 90%;
+    margin: auto;
+}
+
+.locations-head h2 {
+    text-decoration: underline;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 932px) {
     html {

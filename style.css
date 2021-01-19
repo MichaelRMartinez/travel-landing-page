@@ -94,6 +94,11 @@ nav ul {
     color: #fff;
     font-size: 1.75rem;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.hero button:hover {
+    background-color: #131c27;
 }
 
 

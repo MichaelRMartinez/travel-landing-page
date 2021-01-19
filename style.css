@@ -105,6 +105,7 @@ nav ul {
     background-position: center;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .locations-head {
@@ -114,6 +115,12 @@ nav ul {
 
 .locations-head h2 {
     text-decoration: underline;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
 }
 
 

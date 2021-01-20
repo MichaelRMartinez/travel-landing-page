@@ -231,3 +231,9 @@ nav ul {
         height: 40rem;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .benefits br {
+        display: none;
+    }
+}
